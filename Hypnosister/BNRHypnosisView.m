@@ -35,8 +35,6 @@
 {
     CGRect bounds = self.bounds;
     
-    UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
-    
     //Figure out the center of the bounds rectangle
     CGPoint center;
     center.x = bounds.origin.x + bounds.size.width / 2.0;
@@ -66,9 +64,6 @@
     
     // Draw the line!
     [path stroke];
-    
-    // Draw logo
-    [logoImage drawInRect:bounds];
 }
 
 @end
